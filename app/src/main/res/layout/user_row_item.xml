@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/ctxtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtJudul"
+                android:text="date"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/ctxtDate"/>
+
+            <TextView
+                android:id="@+id/ctxtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtJudul"
+                android:text="Judul :"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/ctxtDate"/>
+
+            <TextView
+                android:id="@+id/txtDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtJudul"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="18dp"/>
+
+            <TextView
+                android:id="@+id/ctxtDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtDeskripsi"
+                android:layout_below="@+id/ctxtJudul"
+                android:text="Deskripsi :"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/imgedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp"
+                android:layout_below="@+id/imgdelete"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
